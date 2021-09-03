@@ -1,0 +1,77 @@
+
+body {
+  
+  margin: 2%;
+}
+
+.two.columns {
+  width: 16.25%;
+}
+
+.column,
+.columns {
+  margin-left: 0.5%;
+}
+
+.pretty_container {
+  border-radius: 5px;
+  margin: 10px;
+  padding: 2px 10px;
+  position: relative;
+  box-shadow: 2px 2px 2px 2px lightgrey;
+}
+
+#title {
+  text-align: center;
+}
+
+.mini_container {
+  border-radius: 5px;
+  
+  margin: 10px;
+  padding: 5px;
+  position: relative;
+  box-shadow: 2px 2px 2px 2px lightgrey;
+}
+
+
+
+
+
+#tripleContainer {
+  display: flex;
+  flex: 3;
+}
+
+#mainContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Turn off existing buttons */
+.radio-group .custom-control-input ~ .custom-control-label::before {
+  content: none;
+}
+
+.radio-group .custom-radio .custom-control-input ~ .custom-control-label::after {
+  content: none;
+}
+
+/* restyle radio items */
+.radio-group .custom-control {
+  padding-left: 0;
+}
+
+.radio-group .btn-group > .custom-control:not(:last-child) > .btn {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.radio-group .btn-group > .custom-control:not(:first-child) > .btn {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  margin-left: -1px;
+    
+    
+
+}
