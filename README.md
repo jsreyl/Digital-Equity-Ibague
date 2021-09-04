@@ -1,4 +1,5 @@
 # Zonas Vibra: Digital Equity through free internet access points in Ibagué, Colombia
+https://github.com/jsreyl/Digital-Equity-Ibague
 ##### Data Science 4 All 2021
 ##### Cristian Amezquita, Guillermo Cangrejo, Gabriela Garcia, Ever Sanchez, Juan S. Rey, Carlos Ruiz.
 
@@ -52,3 +53,10 @@ python3 app.py
 This should deploy a working version of the app in your browser. The scripts in the main folder work as follows:
  - _app.py_ : Uses the Dash library to handle frontend visualization and interaction. Currently deployed in AWS EC2. Each of the views is controlled by this script using either .csv files in /data/ (to run using local resources) or an external database. Logos and icons displayed as well as stilesheets are used from /assets/.
  - _connector.py_ : Connects the frontend part of the application to the external PostreSQL database (currently deployed in AWS RDS). The functions here make queries to the database and convert them into pandas DataFrames that are used for visualization in the frontend.
+
+## Model
+Model training and visualization is performed apart from the main web application as it would be too heavy to train the model real time to generate predictions. The model training scripts can be found in /model/ as follows:
+- _Zonas Vibra Connection Model_: A jupyter notebook containing the preprocessing of the dataset and training of a logit model to **predict connectivity*** of a Zona Vibra given the demographic variables of the population around it.
+- _No Proximity Model_: A jupyter notebook containing the preprocessing of the dataset and training of a logit model to **predict proximity** of a given location block in the city to a Zona Vibra, notice this proximity uses demographic variables as well to geographic position to prioritize vulnerable population.
+- _Plotly Map Plot_: A jupyter notebook exemplifying the process to generate heatmap visualizations using plotly.
+- _Zonas Vibra EDA_: A jupyter notebook with the processing and Exploratory Data Analysis of the Zonas Vibra dataset and the generation of further data via aggreagation of population close to the Zonas Vibra. Can be obtained [here!](https://drive.google.com/file/d/1duelzzgN-SiNuplDWkk9tEAnzbQq2BNm/view?usp=sharing) (Please beware as multiple map visualizations can take quite some space.)
