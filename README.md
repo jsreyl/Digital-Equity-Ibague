@@ -1,5 +1,5 @@
 # Zonas Vibra: Digital Equity through free internet access points in Ibagué, Colombia
-https://github.com/jsreyl/Digital-Equity-Ibague
+Access this codebase at : https://github.com/jsreyl/Digital-Equity-Ibague
 ##### Data Science 4 All 2021
 ##### Cristian Amezquita, Guillermo Cangrejo, Gabriela Garcia, Ever Sanchez, Juan S. Rey, Carlos Ruiz.
 
